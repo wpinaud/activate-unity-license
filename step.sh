@@ -1,6 +1,6 @@
 #!/bin/bash
 
-set -e
+set -ex
 
 if [ "$(uname)" == "Darwin" ]; then
     /Applications/Unity/Unity.app/Contents/MacOS/Unity -logfile -quit -batchmode \
