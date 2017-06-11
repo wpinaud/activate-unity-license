@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -e
+
 if [ "$(uname)" == "Darwin" ]; then
     /Applications/Unity/Unity.app/Contents/MacOS/Unity -logfile -quit -batchmode \
         -username $unity_email -password $unity_password -serial $unity_serial
