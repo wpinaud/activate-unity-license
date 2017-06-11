@@ -1,0 +1,42 @@
+title: "Activate Unity license"
+summary: The step activates a Unity license 
+description: |-
+  This step activates the provided Unity license; for that you need an e-mail, password and serial.
+  
+  Always deactivate the license after finishing your build, whether it was successful or not.
+website: https://github.com/rubentorresbonet/activate-unity-license
+source_code_url: https://github.com/rubentorresbonet/activate-unity-license
+support_url: https://github.com/rubentorresbonet/activate-unity-license/issues
+host_os_tags:
+  - osx-10.10
+  - ubuntu
+project_type_tags:
+  - ios
+  - android
+type_tags:
+  - script
+is_requires_admin_user: true
+is_always_run: false
+is_skippable: false
+deps:
+  brew:
+  apt_get:
+  - name: xvfb
+    bin_name: xvfm-run
+run_if: ""
+inputs:
+  - unity_email:
+    opts:
+      title: "Unity account e-mail"
+      is_expand: true
+      is_required: true
+  - unity_password:
+    opts:
+      title: "Unity account password"
+      is_expand: true
+      is_required: true
+  - unity_serial:
+    opts:
+      title: "Unity account password"
+      is_expand: true
+      is_required: true
