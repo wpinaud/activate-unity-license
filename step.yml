@@ -25,17 +25,17 @@ deps:
     bin_name: xvfm-run
 run_if: ""
 inputs:
-  - unity_email:
+  - unity_email: $UNITY_EMAIL
     opts:
       title: "Unity account e-mail"
       is_expand: true
       is_required: true
-  - unity_password:
+  - unity_password: $UNITY_PASSWORD
     opts:
       title: "Unity account password"
       is_expand: true
       is_required: true
-  - unity_serial:
+  - unity_serial: $UNITY_SERIAL
     opts:
       title: "Unity account password"
       is_expand: true
